@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Dashboard from './components/Dashboard/Dashboard';
 import CountdownText from './components/Typography/CountdownText';
@@ -7,6 +6,7 @@ import TopBar from './components/TopBar/TopBar';
 import FilterBar from './components/Filter/FilterBar';
 import AddGoal from './components/Goals/AddGoal';
 import GoalList from './components/Goals/GoalList';
+import GoalItem from './components/GoalItem'
 
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
               <CountdownText />
               <AddGoal />
               <FilterBar className="align-left"/>
+              <GoalItem />
               <Dashboard />
               
               
