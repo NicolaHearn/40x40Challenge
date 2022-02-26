@@ -1,0 +1,10 @@
+.frame {
+    height: 720px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width:100%;
+    /* border: 1px solid;
+    border-color: #000000; */
+}

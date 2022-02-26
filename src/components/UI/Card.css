@@ -1,0 +1,14 @@
+.goals {
+    background-color: #F0544F;
+    min-width: 200px;
+    max-width: 20%;
+    aspect-ratio: 4/1;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    text-align: left;
+    flex-grow: 1;
+    color: #FDF0D5;
+    display: flex;
+    
+}
