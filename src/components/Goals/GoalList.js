@@ -1,15 +1,15 @@
 import React from 'react';
-import Card from '../UI/Card';
 import './GoalList.css';
+import GoalItem from '../GoalItem';
 
-const GoalList = props => {
+function GoalList(props) {
+    
     return (
-        <Card className="goals">
-        <ul>
-            {props.goals.map(goal => <li>{goal.name} | {goal.description}</li>)}
-        </ul>
-        <p>test</p>
-        </Card>
+        <div>
+            <GoalItem title={props.goals[0].title} deadline={props.goals[0].deadline}/>
+            <GoalItem title={props.goals[1].title} deadline={props.goals[1].deadline}/>
+            <GoalItem title={props.goals[2].title} deadline={props.goals[2].deadline}/>
+        </div>
     )
 };
 

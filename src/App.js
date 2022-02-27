@@ -10,19 +10,33 @@ import GoalItem from './components/GoalItem'
 
 
 function App() {
+  const goals = [
+    {
+      id: 1,
+      title: "10k race under 1 hour",
+      deadline: new Date(2023, 5, 4)
+    },
+    {
+      id: 2,
+      title: "Get a job",
+      deadline: new Date(2023, 5, 4)
+    },
+    {
+      id: 3,
+      title: "Trip to Northumberland to see sea lions",
+      deadline: new Date(2023, 5, 4)
+    }
+  ]
+
   return (
     <div className="App">
-              
               <TopBar />
               <CountdownText />
               <AddGoal />
               <FilterBar className="align-left"/>
-              <GoalItem />
-              <Dashboard />
-              
-              
+              <GoalList goals={goals}/>           
     </div>
   );
-}
+};
 
 export default App;
