@@ -1,6 +1,6 @@
 import React from 'react';
 import './GoalList.css';
-import GoalItem from '../GoalItem';
+import GoalItem from './GoalItem';
 
 function GoalList(props) {
     
