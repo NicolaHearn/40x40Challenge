@@ -1,4 +1,5 @@
 import './GoalItem.css';
+import Card from '../UI/Card';
 
 function GoalItem(props) {
     const month = props.deadline.toLocaleString('en-US', { month: 'long' });
@@ -6,7 +7,7 @@ function GoalItem(props) {
     const year = props.deadline.getFullYear();
 
     return (
-        <div className="goal-item">
+        <Card className="goal-item">
             <div className="goal-item__image">Goal Image</div>
             <div>
                 <p>{props.title}</p>
@@ -17,7 +18,7 @@ function GoalItem(props) {
                 </div>
                 <p>Optional Comments</p>
             </div>
-        </div>
+        </Card>
     );
 };
 
