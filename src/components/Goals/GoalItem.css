@@ -10,5 +10,18 @@
     flex-grow: 1;
     color: #FDF0D5;
     display: flex;
-    
+}
+
+.goal-item p {
+    font-style: italic;
+    font-size: 0.65rem;
+}
+
+.goal-item__deadline {
+    font-size: 0.65rem;
+    display: inline-flex;
+}
+
+.goal-item__image {
+    width: 25%;
 }

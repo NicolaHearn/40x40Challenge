@@ -7,14 +7,15 @@ function GoalItem(props) {
 
     return (
         <div className="goal-item">
-            <div>{props.title}</div>
+            <div className="goal-item__image">Goal Image</div>
             <div>
-                <div>
+                <p>{props.title}</p>
+                <div className="goal-item__deadline">
                     <div>{day}</div>
-                    <div>{month}</div>
-                    <div>{year}</div>    
+                    <div>{month} </div>
+                    <div>{year} </div>    
                 </div>
-                <h2>Optional Comments</h2>
+                <p>Optional Comments</p>
             </div>
         </div>
     );

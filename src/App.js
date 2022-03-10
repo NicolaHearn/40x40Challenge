@@ -13,7 +13,7 @@ function App() {
     {
       id: 1,
       title: "10k race under 1 hour",
-      deadline: new Date(2023, 5, 4)
+      deadline: new Date(2023, 4, 4)
     },
     {
       id: 2,
