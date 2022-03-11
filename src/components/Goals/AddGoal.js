@@ -16,9 +16,8 @@ const AddGoal = props => {
         
         };
         const goalData = {
-            goalTitle: enteredGoal,
-            goalDescription: enteredDescription,
-            goaldate: enteredDate
+            title: enteredGoal,
+            deadline: enteredDate
         };
 
         props.onAddGoal(goalData);
@@ -28,14 +27,15 @@ const AddGoal = props => {
         setEnteredGoal(event.target.value);
     }
 
-
     const descriptionChangeHandler = (event) => {
         setEnteredDescription(event.target.value);
     }
 
     const dateChangeHandler = (event) => {
         setEnteredDate(event.target.value);
-    }
+    };
+
+   
 
     return (
         <Card className="add-goal-form">
