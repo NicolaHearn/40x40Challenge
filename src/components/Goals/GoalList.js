@@ -7,11 +7,13 @@ const GoalList = (props) => {
     
     return (
         <Card className="goal-list">
-            <GoalItem title={props.items[0].title} />
+            <GoalItem 
+                title={props.items[0].title}
+                date={props.items[0].deadline} />
             {props.items.map(goal => {
                 <GoalItem 
                 title={goal.title} 
-                deadline={goal.deadline}
+                //deadline={goal.deadline}
                 />
             })}; 
         </Card>

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 import CountdownText from './components/Typography/CountdownText';
-import ProfileIcon from './components/ProfileIcon/ProfileIcon';
 import TopBar from './components/TopBar/TopBar';
 import FilterBar from './components/Filter/FilterBar';
 import AddGoal from './components/Goals/AddGoal';
@@ -34,8 +33,8 @@ function App() {
     console.log('in app.js');
     console.log(newGoal);
     
-    setGoals((prevGoals) => {
-      return [newGoal, ...prevGoals]
+    setGoals(prevGoals => {
+      return [newGoal, ...goals]
     })
   };
 
