@@ -1,7 +1,7 @@
 import './GoalItem.css';
 import Card from '../UI/Card';
 
-function GoalItem(props) {
+const GoalItem = (props) => {
     const month = props.deadline.toLocaleString('en-US', { month: 'long' });
     const day = props.deadline.toLocaleString('en-US', { day: '2-digit' });
     const year = props.deadline.getFullYear();

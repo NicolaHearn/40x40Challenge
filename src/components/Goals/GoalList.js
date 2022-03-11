@@ -3,7 +3,7 @@ import './GoalList.css';
 import GoalItem from './GoalItem';
 import Card from '../UI/Card';
 
-function GoalList(props) {
+const GoalList = (props) => {
     
     return (
         <Card className="goal-list">
