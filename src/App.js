@@ -25,13 +25,18 @@ function App() {
       title: "Trip to Northumberland to see sea lions",
       deadline: new Date(2023, 5, 4)
     }
-  ]
+  ];
+
+  const addGoalHandler = (goal) => {
+    console.log('in app.js');
+    console.log(goal);
+  }
 
   return (
     <div className="App">
               <TopBar />
               <CountdownText />
-              <AddGoal />
+              <AddGoal onAddGoal={addGoalHandler}/>
               <FilterBar className="align-left"/>
               <GoalList goals={goals}/>           
     </div>

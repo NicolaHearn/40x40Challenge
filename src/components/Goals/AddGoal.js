@@ -21,10 +21,7 @@ const AddGoal = props => {
             goaldate: enteredDate
         };
 
-        console.log(goalData);
-        setEnteredGoal('');
-        setEnteredDescription('');
-        setEnteredDate('');
+        props.onAddGoal(goalData);
     };
 
     const goalnameChangeHandler = (event) => {
