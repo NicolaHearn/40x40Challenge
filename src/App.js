@@ -38,7 +38,10 @@ function App() {
       return [newGoal, ...goals]
     }
     );
+    console.log(goals);
   }
+
+  console.log(goals);
 
   return (
     <div className="App">
