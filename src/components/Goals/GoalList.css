@@ -1,3 +1,7 @@
 .goal-list {
-    background-color: grey;
+        padding: 1rem;
+        background-color: #C6D8D3;
+        margin: 2rem auto;
+        width: 50rem;
+        max-width: 95%
 }

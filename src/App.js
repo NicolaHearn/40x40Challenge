@@ -5,6 +5,7 @@ import TopBar from './components/TopBar/TopBar';
 import FilterBar from './components/Filter/FilterBar';
 import AddGoal from './components/Goals/AddGoal';
 import GoalList from './components/Goals/GoalList';
+import GoalItem from './components/Goals/GoalItem';
 
 const dummy_goals = [
   {
@@ -32,11 +33,12 @@ function App() {
   const addGoalHandler = newGoal => {
     console.log('in app.js');
     console.log(newGoal);
-    
-    setGoals(prevGoals => {
+  
+    setGoals((prevGoals) => {
       return [newGoal, ...goals]
-    })
-  };
+    }
+    );
+  }
 
   return (
     <div className="App">
@@ -44,7 +46,8 @@ function App() {
               <CountdownText />
               <AddGoal onAddGoal={addGoalHandler}/>
               <FilterBar className="align-left"/>
-              <GoalList items={goals}/>           
+              <GoalList items={goals}/>
+             
     </div>
   );
 };

@@ -18,7 +18,7 @@ const AddGoal = props => {
         const goalData = {
             id: Math.random().toString(),
             title: enteredGoal,
-            deadline: enteredDate
+            deadline: new Date(enteredDate)
         };
 
         props.onAddGoal(goalData);
